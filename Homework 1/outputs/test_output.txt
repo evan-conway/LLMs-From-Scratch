@@ -1,0 +1,1000 @@
+Merge 0: " " + "t" = " t" (641902 instances)
+Merge 1: "h" + "e" = "he" (639606 instances)
+Merge 2: " " + "a" = " a" (479229 instances)
+Merge 3: " " + "s" = " s" (327136 instances)
+Merge 4: " " + "w" = " w" (319705 instances)
+Merge 5: " t" + "he" = " the" (292733 instances)
+Merge 6: "n" + "d" = "nd" (291700 instances)
+Merge 7: "e" + "d" = "ed" (251311 instances)
+Merge 8: " " + "b" = " b" (223850 instances)
+Merge 9: " t" + "o" = " to" (211359 instances)
+Merge 10: " a" + "nd" = " and" (196057 instances)
+Merge 11: " " + "h" = " h" (180175 instances)
+Merge 12: " " + "f" = " f" (171199 instances)
+Merge 13: " " + "T" = " T" (166853 instances)
+Merge 14: "i" + "n" = "in" (166420 instances)
+Merge 15: " w" + "a" = " wa" (163967 instances)
+Merge 16: "r" + "e" = "re" (150563 instances)
+Merge 17: "i" + "t" = "it" (150312 instances)
+Merge 18: "o" + "u" = "ou" (147192 instances)
+Merge 19: " " + "l" = " l" (134745 instances)
+Merge 20: " " + "d" = " d" (132064 instances)
+Merge 21: " " + "c" = " c" (130235 instances)
+Merge 22: " " + "p" = " p" (124316 instances)
+Merge 23: "a" + "y" = "ay" (119613 instances)
+Merge 24: " " + "m" = " m" (110043 instances)
+Merge 25: "e" + "r" = "er" (109328 instances)
+Merge 26: " wa" + "s" = " was" (109127 instances)
+Merge 27: " T" + "he" = " The" (103331 instances)
+Merge 28: "o" + "m" = "om" (103150 instances)
+Merge 29: " " + "he" = " he" (100293 instances)
+Merge 30: "i" + "s" = "is" (96146 instances)
+Merge 31: " " + "n" = " n" (92423 instances)
+Merge 32: "i" + "m" = "im" (91676 instances)
+Merge 33: "a" + "r" = "ar" (91390 instances)
+Merge 34: "o" + "n" = "on" (91107 instances)
+Merge 35: " s" + "a" = " sa" (90022 instances)
+Merge 36: "l" + "l" = "ll" (89106 instances)
+Merge 37: "i" + "d" = "id" (87652 instances)
+Merge 38: " h" + "a" = " ha" (82293 instances)
+Merge 39: " " + "g" = " g" (78811 instances)
+Merge 40: "a" + "t" = "at" (77712 instances)
+Merge 41: " " + "S" = " S" (76915 instances)
+Merge 42: "in" + "g" = "ing" (76384 instances)
+Merge 43: "o" + "t" = "ot" (73515 instances)
+Merge 44: "e" + "n" = "en" (70748 instances)
+Merge 45: "a" + "n" = "an" (69094 instances)
+Merge 46: "l" + "e" = "le" (67603 instances)
+Merge 47: "o" + "r" = "or" (64034 instances)
+Merge 48: "i" + "r" = "ir" (59518 instances)
+Merge 49: "a" + "m" = "am" (57820 instances)
+Merge 50: "e" + "t" = "et" (56149 instances)
+Merge 51: " " + "H" = " H" (56047 instances)
+Merge 52: " " + "it" = " it" (54931 instances)
+Merge 53: " t" + "h" = " th" (54465 instances)
+Merge 54: "i" + "g" = "ig" (53743 instances)
+Merge 55: " The" + "y" = " They" (52425 instances)
+Merge 56: " p" + "l" = " pl" (49816 instances)
+Merge 57: " " + "in" = " in" (49557 instances)
+Merge 58: "i" + "l" = "il" (49515 instances)
+Merge 59: " H" + "e" = " He" (49438 instances)
+Merge 60: " " + """ = " "" (47787 instances)
+Merge 61: "o" + "w" = "ow" (47047 instances)
+Merge 62: "v" + "er" = "ver" (47026 instances)
+Merge 63: "r" + "i" = "ri" (46980 instances)
+Merge 64: " " + "u" = " u" (44666 instances)
+Merge 65: "u" + "t" = "ut" (44516 instances)
+Merge 66: " pl" + "ay" = " play" (44463 instances)
+Merge 67: "it" + "h" = "ith" (43998 instances)
+Merge 68: " sa" + "id" = " said" (43900 instances)
+Merge 69: " b" + "e" = " be" (43838 instances)
+Merge 70: " d" + "ay" = " day" (43729 instances)
+Merge 71: " w" + "ith" = " with" (43569 instances)
+Merge 72: "p" + "p" = "pp" (43309 instances)
+Merge 73: "O" + "n" = "On" (43162 instances)
+Merge 74: " " + "o" = " o" (42706 instances)
+Merge 75: " " + "y" = " y" (42310 instances)
+Merge 76: "o" + "o" = "oo" (41481 instances)
+Merge 77: "k" + "ed" = "ked" (41476 instances)
+Merge 78: " " + "r" = " r" (41123 instances)
+Merge 79: " he" + "r" = " her" (39887 instances)
+Merge 80: "c" + "e" = "ce" (39683 instances)
+Merge 81: "l" + "d" = "ld" (39169 instances)
+Merge 82: " h" + "is" = " his" (38871 instances)
+Merge 83: " T" + "im" = " Tim" (38785 instances)
+Merge 84: " " + "I" = " I" (38524 instances)
+Merge 85: " S" + "he" = " She" (38045 instances)
+Merge 86: " s" + "t" = " st" (37467 instances)
+Merge 87: "k" + "e" = "ke" (37131 instances)
+Merge 88: " " + "e" = " e" (36804 instances)
+Merge 89: " b" + "ig" = " big" (36084 instances)
+Merge 90: "n" + "t" = "nt" (35681 instances)
+Merge 91: "c" + "k" = "ck" (35536 instances)
+Merge 92: "ver" + "y" = "very" (35250 instances)
+Merge 93: " y" + "ou" = " you" (34887 instances)
+Merge 94: "s" + "t" = "st" (34700 instances)
+Merge 95: "v" + "e" = "ve" (33788 instances)
+Merge 96: "e" + "nd" = "end" (32817 instances)
+Merge 97: "u" + "n" = "un" (32163 instances)
+Merge 98: " ha" + "pp" = " happ" (32020 instances)
+Merge 99: " " + "on" = " on" (31717 instances)
+Merge 100: "a" + "ll" = "all" (31138 instances)
+Merge 101: "ri" + "end" = "riend" (30669 instances)
+Merge 102: " f" + "riend" = " friend" (30617 instances)
+Merge 103: " the" + "y" = " they" (29904 instances)
+Merge 104: " " + "L" = " L" (29558 instances)
+Merge 105: "il" + "y" = "ily" (29547 instances)
+Merge 106: " w" + "e" = " we" (29146 instances)
+Merge 107: " ha" + "d" = " had" (29057 instances)
+Merge 108: " u" + "p" = " up" (28822 instances)
+Merge 109: " l" + "i" = " li" (28767 instances)
+Merge 110: " n" + "ot" = " not" (28672 instances)
+Merge 111: "he" + "r" = "her" (28643 instances)
+Merge 112: " wa" + "nt" = " want" (28565 instances)
+Merge 113: "it" + "t" = "itt" (27978 instances)
+Merge 114: " o" + "f" = " of" (27886 instances)
+Merge 115: "a" + "d" = "ad" (27402 instances)
+Merge 116: " d" + "o" = " do" (27206 instances)
+Merge 117: " " + "B" = " B" (27119 instances)
+Merge 118: "s" + "e" = "se" (26728 instances)
+Merge 119: " happ" + "y" = " happy" (25864 instances)
+Merge 120: "en" + "t" = "ent" (25500 instances)
+Merge 121: " " + "very" = " very" (25453 instances)
+Merge 122: " " + "M" = " M" (25058 instances)
+Merge 123: "e" + "s" = "es" (24982 instances)
+Merge 124: " sa" + "w" = " saw" (24935 instances)
+Merge 125: "On" + "e" = "One" (24889 instances)
+Merge 126: " th" + "at" = " that" (24694 instances)
+Merge 127: "ou" + "ld" = "ould" (24692 instances)
+Merge 128: "'" + "s" = "'s" (24690 instances)
+Merge 129: " f" + "or" = " for" (24223 instances)
+Merge 130: "itt" + "le" = "ittle" (24183 instances)
+Merge 131: " m" + "om" = " mom" (24160 instances)
+Merge 132: " l" + "ittle" = " little" (23936 instances)
+Merge 133: " s" + "o" = " so" (23874 instances)
+Merge 134: " s" + "h" = " sh" (23724 instances)
+Merge 135: " s" + "he" = " she" (23061 instances)
+Merge 136: "im" + "e" = "ime" (22266 instances)
+Merge 137: "c" + "h" = "ch" (22171 instances)
+Merge 138: " n" + "am" = " nam" (22049 instances)
+Merge 139: " t" + "ime" = " time" (21952 instances)
+Merge 140: " " + "k" = " k" (21913 instances)
+Merge 141: " n" + "e" = " ne" (21817 instances)
+Merge 142: "ou" + "nd" = "ound" (21692 instances)
+Merge 143: "." + """ = "."" (21539 instances)
+Merge 144: " the" + "re" = " there" (21413 instances)
+Merge 145: " nam" + "ed" = " named" (21072 instances)
+Merge 146: " b" + "o" = " bo" (20846 instances)
+Merge 147: " s" + "m" = " sm" (20526 instances)
+Merge 148: " we" + "re" = " were" (20138 instances)
+Merge 149: " want" + "ed" = " wanted" (19990 instances)
+Merge 150: " L" + "ily" = " Lily" (19875 instances)
+Merge 151: " friend" + "s" = " friends" (19653 instances)
+Merge 152: "ou" + "t" = "out" (19554 instances)
+Merge 153: "ir" + "d" = "ird" (19553 instances)
+Merge 154: " b" + "ut" = " but" (19543 instances)
+Merge 155: "v" + "ed" = "ved" (19322 instances)
+Merge 156: "h" + "t" = "ht" (19306 instances)
+Merge 157: "!" + """ = "!"" (19297 instances)
+Merge 158: "T" + "he" = "The" (19280 instances)
+Merge 159: " T" + "om" = " Tom" (19144 instances)
+Merge 160: " b" + "ird" = " bird" (18944 instances)
+Merge 161: "e" + "l" = "el" (18845 instances)
+Merge 162: "a" + "ke" = "ake" (18579 instances)
+Merge 163: " a" + "n" = " an" (18552 instances)
+Merge 164: "a" + "l" = "al" (18514 instances)
+Merge 165: " to" + "o" = " too" (17864 instances)
+Merge 166: "om" + "e" = "ome" (17806 instances)
+Merge 167: " w" + "ent" = " went" (17676 instances)
+Merge 168: " w" + "h" = " wh" (17647 instances)
+Merge 169: "id" + "e" = "ide" (17612 instances)
+Merge 170: "On" + "ce" = "Once" (17559 instances)
+Merge 171: " a" + "ll" = " all" (17397 instances)
+Merge 172: " I" + "t" = " It" (17371 instances)
+Merge 173: " he" + "l" = " hel" (17370 instances)
+Merge 174: "u" + "g" = "ug" (17318 instances)
+Merge 175: "u" + "e" = "ue" (17084 instances)
+Merge 176: " hel" + "p" = " help" (17051 instances)
+Merge 177: " " + "is" = " is" (16774 instances)
+Merge 178: " l" + "oo" = " loo" (16682 instances)
+Merge 179: " " + "A" = " A" (16657 instances)
+Merge 180: " up" + "on" = " upon" (16636 instances)
+Merge 181: " l" + "o" = " lo" (16508 instances)
+Merge 182: "t" + "er" = "ter" (16448 instances)
+Merge 183: "r" + "y" = "ry" (16343 instances)
+Merge 184: " to" + "y" = " toy" (15723 instances)
+Merge 185: "o" + "re" = "ore" (15687 instances)
+Merge 186: " f" + "un" = " fun" (15581 instances)
+Merge 187: "i" + "nd" = "ind" (15524 instances)
+Merge 188: "g" + "et" = "get" (15480 instances)
+Merge 189: "i" + "ll" = "ill" (15232 instances)
+Merge 190: "am" + "e" = "ame" (15175 instances)
+Merge 191: " a" + "s" = " as" (15146 instances)
+Merge 192: " " + "j" = " j" (15002 instances)
+Merge 193: "r" + "a" = "ra" (14906 instances)
+Merge 194: " a" + "t" = " at" (14896 instances)
+Merge 195: "get" + "her" = "gether" (14873 instances)
+Merge 196: " c" + "at" = " cat" (14661 instances)
+Merge 197: " d" + "id" = " did" (14627 instances)
+Merge 198: " " + "re" = " re" (14581 instances)
+Merge 199: "u" + "r" = "ur" (14408 instances)
+Merge 200: " to" + "gether" = " together" (14342 instances)
+Merge 201: "a" + "ck" = "ack" (14068 instances)
+Merge 202: " s" + "e" = " se" (13961 instances)
+Merge 203: "l" + "y" = "ly" (13721 instances)
+Merge 204: " t" + "re" = " tre" (13644 instances)
+Merge 205: "oo" + "d" = "ood" (13466 instances)
+Merge 206: " do" + "g" = " dog" (13455 instances)
+Merge 207: "i" + "c" = "ic" (13147 instances)
+Merge 208: " c" + "ould" = " could" (13132 instances)
+Merge 209: "t" + "ed" = "ted" (13080 instances)
+Merge 210: " c" + "an" = " can" (12923 instances)
+Merge 211: " b" + "all" = " ball" (12729 instances)
+Merge 212: "ar" + "d" = "ard" (12625 instances)
+Merge 213: " g" + "ir" = " gir" (12603 instances)
+Merge 214: " the" + "ir" = " their" (12575 instances)
+Merge 215: "ar" + "k" = "ark" (12509 instances)
+Merge 216: " gir" + "l" = " girl" (12470 instances)
+Merge 217: " play" + "ed" = " played" (12386 instances)
+Merge 218: "e" + "c" = "ec" (12365 instances)
+Merge 219: "m" + "y" = "my" (12340 instances)
+Merge 220: " h" + "im" = " him" (12296 instances)
+Merge 221: " g" + "o" = " go" (12107 instances)
+Merge 222: "w" + "ay" = "way" (12101 instances)
+Merge 223: " r" + "o" = " ro" (12076 instances)
+Merge 224: "?" + """ = "?"" (11995 instances)
+Merge 225: "he" + "d" = "hed" (11840 instances)
+Merge 226: "a" + "in" = "ain" (11795 instances)
+Merge 227: " k" + "n" = " kn" (11771 instances)
+Merge 228: " l" + "e" = " le" (11764 instances)
+Merge 229: " " + "out" = " out" (11672 instances)
+Merge 230: "he" + "n" = "hen" (11647 instances)
+Merge 231: " a" + "re" = " are" (11626 instances)
+Merge 232: " f" + "r" = " fr" (11615 instances)
+Merge 233: "u" + "m" = "um" (11602 instances)
+Merge 234: "'" + "t" = "'t" (11552 instances)
+Merge 235: " the" + "m" = " them" (11398 instances)
+Merge 236: " bo" + "y" = " boy" (11319 instances)
+Merge 237: " sa" + "d" = " sad" (11274 instances)
+Merge 238: "u" + "l" = "ul" (11130 instances)
+Merge 239: "a" + "x" = "ax" (11035 instances)
+Merge 240: " tre" + "e" = " tree" (10873 instances)
+Merge 241: "ot" + "her" = "other" (10699 instances)
+Merge 242: "ou" + "g" = "oug" (10690 instances)
+
+
+
+MERGES
+0: " " + "t" = " t"
+1: "h" + "e" = "he"
+2: " " + "a" = " a"
+3: " " + "s" = " s"
+4: " " + "w" = " w"
+5: " t" + "he" = " the"
+6: "n" + "d" = "nd"
+7: "e" + "d" = "ed"
+8: " " + "b" = " b"
+9: " t" + "o" = " to"
+10: " a" + "nd" = " and"
+11: " " + "h" = " h"
+12: " " + "f" = " f"
+13: " " + "T" = " T"
+14: "i" + "n" = "in"
+15: " w" + "a" = " wa"
+16: "r" + "e" = "re"
+17: "i" + "t" = "it"
+18: "o" + "u" = "ou"
+19: " " + "l" = " l"
+20: " " + "d" = " d"
+21: " " + "c" = " c"
+22: " " + "p" = " p"
+23: "a" + "y" = "ay"
+24: " " + "m" = " m"
+25: "e" + "r" = "er"
+26: " wa" + "s" = " was"
+27: " T" + "he" = " The"
+28: "o" + "m" = "om"
+29: " " + "he" = " he"
+30: "i" + "s" = "is"
+31: " " + "n" = " n"
+32: "i" + "m" = "im"
+33: "a" + "r" = "ar"
+34: "o" + "n" = "on"
+35: " s" + "a" = " sa"
+36: "l" + "l" = "ll"
+37: "i" + "d" = "id"
+38: " h" + "a" = " ha"
+39: " " + "g" = " g"
+40: "a" + "t" = "at"
+41: " " + "S" = " S"
+42: "in" + "g" = "ing"
+43: "o" + "t" = "ot"
+44: "e" + "n" = "en"
+45: "a" + "n" = "an"
+46: "l" + "e" = "le"
+47: "o" + "r" = "or"
+48: "i" + "r" = "ir"
+49: "a" + "m" = "am"
+50: "e" + "t" = "et"
+51: " " + "H" = " H"
+52: " " + "it" = " it"
+53: " t" + "h" = " th"
+54: "i" + "g" = "ig"
+55: " The" + "y" = " They"
+56: " p" + "l" = " pl"
+57: " " + "in" = " in"
+58: "i" + "l" = "il"
+59: " H" + "e" = " He"
+60: " " + """ = " ""
+61: "o" + "w" = "ow"
+62: "v" + "er" = "ver"
+63: "r" + "i" = "ri"
+64: " " + "u" = " u"
+65: "u" + "t" = "ut"
+66: " pl" + "ay" = " play"
+67: "it" + "h" = "ith"
+68: " sa" + "id" = " said"
+69: " b" + "e" = " be"
+70: " d" + "ay" = " day"
+71: " w" + "ith" = " with"
+72: "p" + "p" = "pp"
+73: "O" + "n" = "On"
+74: " " + "o" = " o"
+75: " " + "y" = " y"
+76: "o" + "o" = "oo"
+77: "k" + "ed" = "ked"
+78: " " + "r" = " r"
+79: " he" + "r" = " her"
+80: "c" + "e" = "ce"
+81: "l" + "d" = "ld"
+82: " h" + "is" = " his"
+83: " T" + "im" = " Tim"
+84: " " + "I" = " I"
+85: " S" + "he" = " She"
+86: " s" + "t" = " st"
+87: "k" + "e" = "ke"
+88: " " + "e" = " e"
+89: " b" + "ig" = " big"
+90: "n" + "t" = "nt"
+91: "c" + "k" = "ck"
+92: "ver" + "y" = "very"
+93: " y" + "ou" = " you"
+94: "s" + "t" = "st"
+95: "v" + "e" = "ve"
+96: "e" + "nd" = "end"
+97: "u" + "n" = "un"
+98: " ha" + "pp" = " happ"
+99: " " + "on" = " on"
+100: "a" + "ll" = "all"
+101: "ri" + "end" = "riend"
+102: " f" + "riend" = " friend"
+103: " the" + "y" = " they"
+104: " " + "L" = " L"
+105: "il" + "y" = "ily"
+106: " w" + "e" = " we"
+107: " ha" + "d" = " had"
+108: " u" + "p" = " up"
+109: " l" + "i" = " li"
+110: " n" + "ot" = " not"
+111: "he" + "r" = "her"
+112: " wa" + "nt" = " want"
+113: "it" + "t" = "itt"
+114: " o" + "f" = " of"
+115: "a" + "d" = "ad"
+116: " d" + "o" = " do"
+117: " " + "B" = " B"
+118: "s" + "e" = "se"
+119: " happ" + "y" = " happy"
+120: "en" + "t" = "ent"
+121: " " + "very" = " very"
+122: " " + "M" = " M"
+123: "e" + "s" = "es"
+124: " sa" + "w" = " saw"
+125: "On" + "e" = "One"
+126: " th" + "at" = " that"
+127: "ou" + "ld" = "ould"
+128: "'" + "s" = "'s"
+129: " f" + "or" = " for"
+130: "itt" + "le" = "ittle"
+131: " m" + "om" = " mom"
+132: " l" + "ittle" = " little"
+133: " s" + "o" = " so"
+134: " s" + "h" = " sh"
+135: " s" + "he" = " she"
+136: "im" + "e" = "ime"
+137: "c" + "h" = "ch"
+138: " n" + "am" = " nam"
+139: " t" + "ime" = " time"
+140: " " + "k" = " k"
+141: " n" + "e" = " ne"
+142: "ou" + "nd" = "ound"
+143: "." + """ = ".""
+144: " the" + "re" = " there"
+145: " nam" + "ed" = " named"
+146: " b" + "o" = " bo"
+147: " s" + "m" = " sm"
+148: " we" + "re" = " were"
+149: " want" + "ed" = " wanted"
+150: " L" + "ily" = " Lily"
+151: " friend" + "s" = " friends"
+152: "ou" + "t" = "out"
+153: "ir" + "d" = "ird"
+154: " b" + "ut" = " but"
+155: "v" + "ed" = "ved"
+156: "h" + "t" = "ht"
+157: "!" + """ = "!""
+158: "T" + "he" = "The"
+159: " T" + "om" = " Tom"
+160: " b" + "ird" = " bird"
+161: "e" + "l" = "el"
+162: "a" + "ke" = "ake"
+163: " a" + "n" = " an"
+164: "a" + "l" = "al"
+165: " to" + "o" = " too"
+166: "om" + "e" = "ome"
+167: " w" + "ent" = " went"
+168: " w" + "h" = " wh"
+169: "id" + "e" = "ide"
+170: "On" + "ce" = "Once"
+171: " a" + "ll" = " all"
+172: " I" + "t" = " It"
+173: " he" + "l" = " hel"
+174: "u" + "g" = "ug"
+175: "u" + "e" = "ue"
+176: " hel" + "p" = " help"
+177: " " + "is" = " is"
+178: " l" + "oo" = " loo"
+179: " " + "A" = " A"
+180: " up" + "on" = " upon"
+181: " l" + "o" = " lo"
+182: "t" + "er" = "ter"
+183: "r" + "y" = "ry"
+184: " to" + "y" = " toy"
+185: "o" + "re" = "ore"
+186: " f" + "un" = " fun"
+187: "i" + "nd" = "ind"
+188: "g" + "et" = "get"
+189: "i" + "ll" = "ill"
+190: "am" + "e" = "ame"
+191: " a" + "s" = " as"
+192: " " + "j" = " j"
+193: "r" + "a" = "ra"
+194: " a" + "t" = " at"
+195: "get" + "her" = "gether"
+196: " c" + "at" = " cat"
+197: " d" + "id" = " did"
+198: " " + "re" = " re"
+199: "u" + "r" = "ur"
+200: " to" + "gether" = " together"
+201: "a" + "ck" = "ack"
+202: " s" + "e" = " se"
+203: "l" + "y" = "ly"
+204: " t" + "re" = " tre"
+205: "oo" + "d" = "ood"
+206: " do" + "g" = " dog"
+207: "i" + "c" = "ic"
+208: " c" + "ould" = " could"
+209: "t" + "ed" = "ted"
+210: " c" + "an" = " can"
+211: " b" + "all" = " ball"
+212: "ar" + "d" = "ard"
+213: " g" + "ir" = " gir"
+214: " the" + "ir" = " their"
+215: "ar" + "k" = "ark"
+216: " gir" + "l" = " girl"
+217: " play" + "ed" = " played"
+218: "e" + "c" = "ec"
+219: "m" + "y" = "my"
+220: " h" + "im" = " him"
+221: " g" + "o" = " go"
+222: "w" + "ay" = "way"
+223: " r" + "o" = " ro"
+224: "?" + """ = "?""
+225: "he" + "d" = "hed"
+226: "a" + "in" = "ain"
+227: " k" + "n" = " kn"
+228: " l" + "e" = " le"
+229: " " + "out" = " out"
+230: "he" + "n" = "hen"
+231: " a" + "re" = " are"
+232: " f" + "r" = " fr"
+233: "u" + "m" = "um"
+234: "'" + "t" = "'t"
+235: " the" + "m" = " them"
+236: " bo" + "y" = " boy"
+237: " sa" + "d" = " sad"
+238: "u" + "l" = "ul"
+239: "a" + "x" = "ax"
+240: " tre" + "e" = " tree"
+241: "ot" + "her" = "other"
+242: "ou" + "g" = "oug"
+
+
+
+VOCABULARY
+0: "<|endoftext|>"
+1: " "
+2: ""
+3: ""
+4: ""
+5: ""
+6: ""
+7: ""
+8: ""
+9: ""
+10: "	"
+11: "
+"
+12: ""
+13: ""
+14: ""
+15: ""
+16: ""
+17: ""
+18: ""
+19: ""
+20: ""
+21: ""
+22: ""
+23: ""
+24: ""
+25: ""
+26: ""
+27: ""
+28: ""
+29: ""
+30: ""
+31: ""
+32: ""
+33: " "
+34: "!"
+35: """
+36: "#"
+37: "$"
+38: "%"
+39: "&"
+40: "'"
+41: "("
+42: ")"
+43: "*"
+44: "+"
+45: ","
+46: "-"
+47: "."
+48: "/"
+49: "0"
+50: "1"
+51: "2"
+52: "3"
+53: "4"
+54: "5"
+55: "6"
+56: "7"
+57: "8"
+58: "9"
+59: ":"
+60: ";"
+61: "<"
+62: "="
+63: ">"
+64: "?"
+65: "@"
+66: "A"
+67: "B"
+68: "C"
+69: "D"
+70: "E"
+71: "F"
+72: "G"
+73: "H"
+74: "I"
+75: "J"
+76: "K"
+77: "L"
+78: "M"
+79: "N"
+80: "O"
+81: "P"
+82: "Q"
+83: "R"
+84: "S"
+85: "T"
+86: "U"
+87: "V"
+88: "W"
+89: "X"
+90: "Y"
+91: "Z"
+92: "["
+93: "\"
+94: "]"
+95: "^"
+96: "_"
+97: "`"
+98: "a"
+99: "b"
+100: "c"
+101: "d"
+102: "e"
+103: "f"
+104: "g"
+105: "h"
+106: "i"
+107: "j"
+108: "k"
+109: "l"
+110: "m"
+111: "n"
+112: "o"
+113: "p"
+114: "q"
+115: "r"
+116: "s"
+117: "t"
+118: "u"
+119: "v"
+120: "w"
+121: "x"
+122: "y"
+123: "z"
+124: "{"
+125: "|"
+126: "}"
+127: "~"
+128: ""
+129: ""
+130: ""
+131: ""
+132: ""
+133: ""
+134: ""
+135: ""
+136: ""
+137: ""
+138: ""
+139: ""
+140: ""
+141: ""
+142: ""
+143: ""
+144: ""
+145: ""
+146: ""
+147: ""
+148: ""
+149: ""
+150: ""
+151: ""
+152: ""
+153: ""
+154: ""
+155: ""
+156: ""
+157: ""
+158: ""
+159: ""
+160: ""
+161: ""
+162: ""
+163: ""
+164: ""
+165: ""
+166: ""
+167: ""
+168: ""
+169: ""
+170: ""
+171: ""
+172: ""
+173: ""
+174: ""
+175: ""
+176: ""
+177: ""
+178: ""
+179: ""
+180: ""
+181: ""
+182: ""
+183: ""
+184: ""
+185: ""
+186: ""
+187: ""
+188: ""
+189: ""
+190: ""
+191: ""
+192: ""
+193: ""
+194: ""
+195: ""
+196: ""
+197: ""
+198: ""
+199: ""
+200: ""
+201: ""
+202: ""
+203: ""
+204: ""
+205: ""
+206: ""
+207: ""
+208: ""
+209: ""
+210: ""
+211: ""
+212: ""
+213: ""
+214: ""
+215: ""
+216: ""
+217: ""
+218: ""
+219: ""
+220: ""
+221: ""
+222: ""
+223: ""
+224: ""
+225: ""
+226: ""
+227: ""
+228: ""
+229: ""
+230: ""
+231: ""
+232: ""
+233: ""
+234: ""
+235: ""
+236: ""
+237: ""
+238: ""
+239: ""
+240: ""
+241: ""
+242: ""
+243: ""
+244: ""
+245: ""
+246: ""
+247: ""
+248: ""
+249: ""
+250: ""
+251: ""
+252: ""
+253: ""
+254: ""
+255: ""
+256: ""
+257: " t"
+258: "he"
+259: " a"
+260: " s"
+261: " w"
+262: " the"
+263: "nd"
+264: "ed"
+265: " b"
+266: " to"
+267: " and"
+268: " h"
+269: " f"
+270: " T"
+271: "in"
+272: " wa"
+273: "re"
+274: "it"
+275: "ou"
+276: " l"
+277: " d"
+278: " c"
+279: " p"
+280: "ay"
+281: " m"
+282: "er"
+283: " was"
+284: " The"
+285: "om"
+286: " he"
+287: "is"
+288: " n"
+289: "im"
+290: "ar"
+291: "on"
+292: " sa"
+293: "ll"
+294: "id"
+295: " ha"
+296: " g"
+297: "at"
+298: " S"
+299: "ing"
+300: "ot"
+301: "en"
+302: "an"
+303: "le"
+304: "or"
+305: "ir"
+306: "am"
+307: "et"
+308: " H"
+309: " it"
+310: " th"
+311: "ig"
+312: " They"
+313: " pl"
+314: " in"
+315: "il"
+316: " He"
+317: " ""
+318: "ow"
+319: "ver"
+320: "ri"
+321: " u"
+322: "ut"
+323: " play"
+324: "ith"
+325: " said"
+326: " be"
+327: " day"
+328: " with"
+329: "pp"
+330: "On"
+331: " o"
+332: " y"
+333: "oo"
+334: "ked"
+335: " r"
+336: " her"
+337: "ce"
+338: "ld"
+339: " his"
+340: " Tim"
+341: " I"
+342: " She"
+343: " st"
+344: "ke"
+345: " e"
+346: " big"
+347: "nt"
+348: "ck"
+349: "very"
+350: " you"
+351: "st"
+352: "ve"
+353: "end"
+354: "un"
+355: " happ"
+356: " on"
+357: "all"
+358: "riend"
+359: " friend"
+360: " they"
+361: " L"
+362: "ily"
+363: " we"
+364: " had"
+365: " up"
+366: " li"
+367: " not"
+368: "her"
+369: " want"
+370: "itt"
+371: " of"
+372: "ad"
+373: " do"
+374: " B"
+375: "se"
+376: " happy"
+377: "ent"
+378: " very"
+379: " M"
+380: "es"
+381: " saw"
+382: "One"
+383: " that"
+384: "ould"
+385: "'s"
+386: " for"
+387: "ittle"
+388: " mom"
+389: " little"
+390: " so"
+391: " sh"
+392: " she"
+393: "ime"
+394: "ch"
+395: " nam"
+396: " time"
+397: " k"
+398: " ne"
+399: "ound"
+400: ".""
+401: " there"
+402: " named"
+403: " bo"
+404: " sm"
+405: " were"
+406: " wanted"
+407: " Lily"
+408: " friends"
+409: "out"
+410: "ird"
+411: " but"
+412: "ved"
+413: "ht"
+414: "!""
+415: "The"
+416: " Tom"
+417: " bird"
+418: "el"
+419: "ake"
+420: " an"
+421: "al"
+422: " too"
+423: "ome"
+424: " went"
+425: " wh"
+426: "ide"
+427: "Once"
+428: " all"
+429: " It"
+430: " hel"
+431: "ug"
+432: "ue"
+433: " help"
+434: " is"
+435: " loo"
+436: " A"
+437: " upon"
+438: " lo"
+439: "ter"
+440: "ry"
+441: " toy"
+442: "ore"
+443: " fun"
+444: "ind"
+445: "get"
+446: "ill"
+447: "ame"
+448: " as"
+449: " j"
+450: "ra"
+451: " at"
+452: "gether"
+453: " cat"
+454: " did"
+455: " re"
+456: "ur"
+457: " together"
+458: "ack"
+459: " se"
+460: "ly"
+461: " tre"
+462: "ood"
+463: " dog"
+464: "ic"
+465: " could"
+466: "ted"
+467: " can"
+468: " ball"
+469: "ard"
+470: " gir"
+471: " their"
+472: "ark"
+473: " girl"
+474: " played"
+475: "ec"
+476: "my"
+477: " him"
+478: " go"
+479: "way"
+480: " ro"
+481: "?""
+482: "hed"
+483: "ain"
+484: " kn"
+485: " le"
+486: " out"
+487: "hen"
+488: " are"
+489: " fr"
+490: "um"
+491: "'t"
+492: " them"
+493: " boy"
+494: " sad"
+495: "ul"
+496: "ax"
+497: " tree"
+498: "other"
+499: "oug"
+
+
+
+VOCABULARY STATS
+Longest token: "<|endoftext|>"
