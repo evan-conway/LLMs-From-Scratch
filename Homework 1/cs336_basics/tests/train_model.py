@@ -27,7 +27,7 @@ WEIGHT_DECAY = 0.01
 # specify training loop constants
 BATCH_SIZE = 10
 TRAINING_ITERATIONS = 1280000 // BATCH_SIZE
-SERIALIZATION_FREQUENCY = 100
+SERIALIZATION_FREQUENCY = 10
 
 # initialize transformer model
 transformer = Transformer(vocab_size=VOCAB_SIZE,
@@ -50,6 +50,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument("data", type=str)
 parser.add_argument("--load", type=str, default=None)
 parser.add_argument("--save", type=str, default=None)
+parser.add_argument("--disable_wandb", action="store_true")
 parser.add_argument("--wandb", type=str, default=None)
 args = parser.parse_args()
 
@@ -60,21 +61,28 @@ data = np.memmap(args.data, dtype="uint16", mode="r", shape=(num_elements,))
 
 # if load path is given, load into transformer and optimizer
 if args.load is not None:
+    print("loaded model")
     start_iteration = training.load_checkpoint(args.load, transformer, optimizer)
 else:
     start_iteration = 0
 
 # initialize wandb
-run = wandb.init(
-    entity="turbocon501-university-of-virginia",
-    project="llms-from-scratch",
-    id=args.wandb,
-    resume="allow"
-)
+if not args.disable_wandb:
+    run = wandb.init( # type: ignore
+        entity="turbocon501-university-of-virginia",
+        project="llms-from-scratch",
+        id=args.wandb,
+        resume="allow"
+    )
 
 # run training loop
 torch.autograd.set_detect_anomaly(True)
 for iteration in range(start_iteration, TRAINING_ITERATIONS):
+    # check if things need to be serialized, and serialize them if so
+    if iteration % SERIALIZATION_FREQUENCY == 0 and args.save is not None:
+        training.save_checkpoint(transformer, optimizer, iteration, args.save)
+        print(f"{iteration}: saved model checkpoint")
+
     # fetch batch
     inputs, outputs = training.load_data(data=data,
                                          batch_size=BATCH_SIZE,
@@ -92,12 +100,10 @@ for iteration in range(start_iteration, TRAINING_ITERATIONS):
     loss = training.cross_entropy_loss(logits, outputs)
 
     # log metrics
-    run.log({"training loss": loss})
+    print(f"{iteration}: training loss {loss}")
+    if not args.disable_wandb:
+        run.log({"training loss": loss}) # type: ignore
 
     # backward pass
     loss.backward()
     optimizer.step()
-
-    # check if things need to be serialized, and serialize them if so
-    if iteration % SERIALIZATION_FREQUENCY == 0 and args.save is not None:
-        training.save_checkpoint(transformer, optimizer, iteration, args.save)
