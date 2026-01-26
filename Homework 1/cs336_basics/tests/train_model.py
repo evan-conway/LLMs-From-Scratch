@@ -50,6 +50,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument("data", type=str)
 parser.add_argument("--load", type=str, default=None)
 parser.add_argument("--save", type=str, default=None)
+parser.add_argument("--wandb", type=str, default=None)
 args = parser.parse_args()
 
 # load data
@@ -62,6 +63,14 @@ if args.load is not None:
     start_iteration = training.load_checkpoint(args.load, transformer, optimizer)
 else:
     start_iteration = 0
+
+# initialize wandb
+run = wandb.init(
+    entity="turbocon501-university-of-virginia",
+    project="llms-from-scratch",
+    id=args.wandb,
+    resume="allow"
+)
 
 # run training loop
 torch.autograd.set_detect_anomaly(True)
@@ -82,7 +91,8 @@ for iteration in range(start_iteration, TRAINING_ITERATIONS):
     logits = transformer.forward(inputs)
     loss = training.cross_entropy_loss(logits, outputs)
 
-    print(loss)
+    # log metrics
+    run.log({"training loss": loss})
 
     # backward pass
     loss.backward()
