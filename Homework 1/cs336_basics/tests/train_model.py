@@ -5,6 +5,7 @@ import numpy as np
 import wandb
 import os
 import torch
+from pathlib import Path
 
 # specify training device
 DEVICE = "cpu"
@@ -54,7 +55,7 @@ optimizer = training.AdamW(params=transformer.parameters(),
 parser = argparse.ArgumentParser()
 parser.add_argument("data", type=str)
 parser.add_argument("--load", type=str, default=None)
-parser.add_argument("--save", type=str, default=None)
+parser.add_argument("--save", action="store_true")
 parser.add_argument("--disable_wandb", action="store_true")
 parser.add_argument("--wandb", type=str, default=None)
 args = parser.parse_args()
@@ -80,8 +81,19 @@ if not args.disable_wandb:
         resume="allow"
     )
 
+# get run name and create path to save
+if args.save:
+    if not args.disable_wandb:
+        run_name = run.name # type: ignore
+    else:
+        run_name = "local_run"
+
+    path = Path(f"checkpoints/models/{run_name}")
+    path.mkdir(parents=True, exist_ok=True)
+
 # run training loop
 torch.autograd.set_detect_anomaly(True)
+checkpoint_num = 0
 for iteration in range(start_iteration, TRAINING_ITERATIONS):
     # update learning rate
     learning_rate = training.cosine_learning_rate(iteration + 1,
@@ -104,9 +116,12 @@ for iteration in range(start_iteration, TRAINING_ITERATIONS):
     transformer.train()
     optimizer.zero_grad(set_to_none=True)
 
-    # check if things need to be serialized, and serialize them if so
-    if iteration % SERIALIZATION_FREQUENCY == 0 and args.save is not None:
-        training.save_checkpoint(transformer, optimizer, iteration, args.save)
+    # perform checkpointing
+    if iteration % SERIALIZATION_FREQUENCY == 0 and args.save:
+        save_path = f"checkpoints/models/{run_name}/checkpoint_{checkpoint_num}.pt" # type: ignore
+        training.save_checkpoint(transformer, optimizer, iteration, save_path)
+        checkpoint_num += 1
+
         print(f"{iteration}: saved model")
 
     # forward pass
