@@ -19,9 +19,9 @@ D_FF = 1344
 ROPE_THETA = 10000
 
 # specify training loop constants
-BATCH_SIZE = 10
-TRAINING_ITERATIONS = 1000 // BATCH_SIZE
-SERIALIZATION_FREQUENCY = 10
+BATCH_SIZE = 5
+TRAINING_ITERATIONS = 10000 // BATCH_SIZE
+SERIALIZATION_FREQUENCY = 200 // BATCH_SIZE
 
 # specify all optimizer constants
 MAX_LEARNING_RATE = 1e-3
@@ -113,14 +113,21 @@ for iteration in range(start_iteration, TRAINING_ITERATIONS):
     logits = transformer.forward(inputs)
     loss = training.cross_entropy_loss(logits, outputs)
 
+    # backward pass
+    loss.backward()
+
+    # perform gradient clipping
+    training.clip_gradients(transformer.parameters(), max_norm=1.0)
+    gradient_norm = training.compute_gradient_norm(transformer.parameters())
+
+    # update
+    optimizer.step()
+
     # log metrics
     print(f"{iteration}: training loss {loss}")
     if not args.disable_wandb:
         run.log({ # type: ignore
             "training loss": loss,
-            "learning rate": learning_rate
+            "learning rate": learning_rate,
+            "gradient norm": gradient_norm
             })
-
-    # backward pass
-    loss.backward()
-    optimizer.step()

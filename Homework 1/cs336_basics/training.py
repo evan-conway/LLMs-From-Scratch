@@ -38,12 +38,18 @@ def cosine_learning_rate(time : int, lr_min : float, lr_max : float, warmup_time
     else:
         return lr_min
 
-def clip_gradients(params: Iterable[torch.nn.Parameter], max_norm: float, eps : float = 1e-6):
+def compute_gradient_norm(params: Iterable[torch.nn.Parameter]) -> float:
     norm : float = 0
     for param in params:
         if param.grad is not None:
             norm += torch.linalg.norm(param.grad)**2
     norm = math.sqrt(norm)
+
+    return norm
+
+def clip_gradients(params: Iterable[torch.nn.Parameter], max_norm: float, eps : float = 1e-6):
+    params = list(params) # materialize so we can iterate multiple times
+    norm = compute_gradient_norm(params)
 
     if norm > max_norm:
         for param in params:
