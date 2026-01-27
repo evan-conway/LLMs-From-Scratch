@@ -362,10 +362,10 @@ class Transformer(torch.nn.Module):
         self.embedding_layer = Embedding(vocab_size, d_model, device=device, dtype=dtype)
 
         # create stack of transformer blocks
-        self.transformer_blocks = [
+        self.transformer_blocks = torch.nn.ModuleList([
             TransformerBlock(d_model, num_heads, d_ff, context_length, theta, device=device, dtype=dtype)
             for layer in range(num_layers)
-        ]
+        ])
 
         # create language model head
         self.lm_head = LMHead(vocab_size, d_model, device=device, dtype=dtype)
@@ -377,7 +377,7 @@ class Transformer(torch.nn.Module):
         self.embedding_layer.set_weights(embedding_weights)
 
         for block, weights in zip(self.transformer_blocks, layer_weights):
-            block.set_weights(**weights)
+            block.set_weights(**weights) # type: ignore
 
         self.lm_head.set_weights(final_norm_weights, unembedding_weights)
 

@@ -61,8 +61,8 @@ data = np.memmap(args.data, dtype="uint16", mode="r", shape=(num_elements,))
 
 # if load path is given, load into transformer and optimizer
 if args.load is not None:
-    print("loaded model")
     start_iteration = training.load_checkpoint(args.load, transformer, optimizer)
+    print(f"loaded model")
 else:
     start_iteration = 0
 
@@ -78,11 +78,6 @@ if not args.disable_wandb:
 # run training loop
 torch.autograd.set_detect_anomaly(True)
 for iteration in range(start_iteration, TRAINING_ITERATIONS):
-    # check if things need to be serialized, and serialize them if so
-    if iteration % SERIALIZATION_FREQUENCY == 0 and args.save is not None:
-        training.save_checkpoint(transformer, optimizer, iteration, args.save)
-        print(f"{iteration}: saved model checkpoint")
-
     # fetch batch
     inputs, outputs = training.load_data(data=data,
                                          batch_size=BATCH_SIZE,
@@ -94,6 +89,10 @@ for iteration in range(start_iteration, TRAINING_ITERATIONS):
     # initialize model for training
     transformer.train()
     optimizer.zero_grad(set_to_none=True)
+
+    # check if things need to be serialized, and serialize them if so
+    if iteration % SERIALIZATION_FREQUENCY == 0 and args.save is not None:
+        training.save_checkpoint(transformer, optimizer, iteration, args.save)
 
     # forward pass
     logits = transformer.forward(inputs)
