@@ -18,16 +18,21 @@ NUM_HEADS = 16
 D_FF = 1344
 ROPE_THETA = 10000
 
+# specify training loop constants
+BATCH_SIZE = 10
+TRAINING_ITERATIONS = 1000 // BATCH_SIZE
+SERIALIZATION_FREQUENCY = 10
+
 # specify all optimizer constants
-LEARNING_RATE = 1e-3
+MAX_LEARNING_RATE = 1e-3
+MIN_LEARNING_RATE = 1e-6
+
+WARMUP_ITERATIONS = int(0.03 * TRAINING_ITERATIONS)
+ANNEALING_ITERATIONS = TRAINING_ITERATIONS
+
 BETA_1 = 0.9
 BETA_2 = 0.98
 WEIGHT_DECAY = 0.01
-
-# specify training loop constants
-BATCH_SIZE = 10
-TRAINING_ITERATIONS = 1280000 // BATCH_SIZE
-SERIALIZATION_FREQUENCY = 10
 
 # initialize transformer model
 transformer = Transformer(vocab_size=VOCAB_SIZE,
@@ -41,7 +46,7 @@ transformer = Transformer(vocab_size=VOCAB_SIZE,
 
 # initialize optimizer
 optimizer = training.AdamW(params=transformer.parameters(),
-                           lr=LEARNING_RATE,
+                           lr=MAX_LEARNING_RATE,
                            betas=(BETA_1, BETA_2),
                            weight_decay=WEIGHT_DECAY)
 
@@ -78,6 +83,15 @@ if not args.disable_wandb:
 # run training loop
 torch.autograd.set_detect_anomaly(True)
 for iteration in range(start_iteration, TRAINING_ITERATIONS):
+    # update learning rate
+    learning_rate = training.cosine_learning_rate(iteration + 1,
+                                                  lr_max=MAX_LEARNING_RATE,
+                                                  lr_min=MIN_LEARNING_RATE,
+                                                  warmup_time=WARMUP_ITERATIONS,
+                                                  annealing_time=ANNEALING_ITERATIONS)
+    for param_group in optimizer.param_groups:
+        param_group['lr'] = learning_rate
+
     # fetch batch
     inputs, outputs = training.load_data(data=data,
                                          batch_size=BATCH_SIZE,
@@ -102,7 +116,10 @@ for iteration in range(start_iteration, TRAINING_ITERATIONS):
     # log metrics
     print(f"{iteration}: training loss {loss}")
     if not args.disable_wandb:
-        run.log({"training loss": loss}) # type: ignore
+        run.log({ # type: ignore
+            "training loss": loss,
+            "learning rate": learning_rate
+            })
 
     # backward pass
     loss.backward()
