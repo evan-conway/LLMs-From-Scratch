@@ -93,6 +93,7 @@ for iteration in range(start_iteration, TRAINING_ITERATIONS):
     # check if things need to be serialized, and serialize them if so
     if iteration % SERIALIZATION_FREQUENCY == 0 and args.save is not None:
         training.save_checkpoint(transformer, optimizer, iteration, args.save)
+        print(f"{iteration}: saved model")
 
     # forward pass
     logits = transformer.forward(inputs)
