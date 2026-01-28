@@ -1,5 +1,7 @@
 from .. import training
 from ..transformer import Transformer
+from ..inference import generate_text
+from ..bpe_tokenizer import BPETokenizer
 import argparse
 import numpy as np
 import wandb
@@ -54,6 +56,7 @@ optimizer = training.AdamW(params=transformer.parameters(),
 # parse arguments
 parser = argparse.ArgumentParser()
 parser.add_argument("data", type=str)
+parser.add_argument("tokenizer", type=str)
 parser.add_argument("--load", type=str, default=None)
 parser.add_argument("--save", action="store_true")
 parser.add_argument("--disable_wandb", action="store_true")
@@ -64,6 +67,11 @@ args = parser.parse_args()
 file_size = os.path.getsize(args.data)
 num_elements = file_size // np.dtype("uint16").itemsize
 data = np.memmap(args.data, dtype="uint16", mode="r", shape=(num_elements,))
+
+# set up tokenizer
+tokenizer = BPETokenizer()
+special_tokens = ["<|endoftext|>"]
+tokenizer.from_file(args.tokenizer, special_tokens)
 
 # if load path is given, load into transformer and optimizer
 if args.load is not None:
@@ -88,7 +96,12 @@ if args.save:
     else:
         run_name = "local_run"
 
+    # create path for models
     path = Path(f"checkpoints/models/{run_name}")
+    path.mkdir(parents=True, exist_ok=True)
+
+    # create path for samples
+    path = Path(f"checkpoints/samples/{run_name}")
     path.mkdir(parents=True, exist_ok=True)
 
 # run training loop
@@ -112,17 +125,24 @@ for iteration in range(start_iteration, TRAINING_ITERATIONS):
     inputs = inputs.to(torch.long)
     outputs = outputs.to(torch.long)
 
+    # perform checkpointing
+    if iteration % SERIALIZATION_FREQUENCY == 0 and args.save:
+        # save model
+        save_path = f"checkpoints/models/{run_name}/checkpoint_{checkpoint_num}.pt" # type: ignore
+        training.save_checkpoint(transformer, optimizer, iteration, save_path)
+
+        # get inference example
+        text_sample = generate_text(transformer, tokenizer,
+                                    prompt="",
+                                    max_tokens_generated=40)
+        print(f'Sample text: "{text_sample}"')
+
+        checkpoint_num += 1
+        print(f"{iteration}: saved model")
+
     # initialize model for training
     transformer.train()
     optimizer.zero_grad(set_to_none=True)
-
-    # perform checkpointing
-    if iteration % SERIALIZATION_FREQUENCY == 0 and args.save:
-        save_path = f"checkpoints/models/{run_name}/checkpoint_{checkpoint_num}.pt" # type: ignore
-        training.save_checkpoint(transformer, optimizer, iteration, save_path)
-        checkpoint_num += 1
-
-        print(f"{iteration}: saved model")
 
     # forward pass
     logits = transformer.forward(inputs)

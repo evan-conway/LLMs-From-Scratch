@@ -187,16 +187,19 @@ class RotaryPositionalEmbedding(torch.nn.Module):
         return x
 
 
-def softmax(x : torch.Tensor, dim : int = -1) -> torch.Tensor:
+def softmax(x : torch.Tensor, dim : int = -1, temperature : float = 1.0) -> torch.Tensor:
+    # scale based on temperature value
+    scaled = x / temperature
+
     # move the relevant dimension to the back
-    x = torch.movedim(x, dim, -1)
+    scaled = torch.movedim(scaled, dim, -1)
 
     # get the max for the relevant dimension and then add extra dimension
-    maxes = torch.max(x, -1).values
+    maxes = torch.max(scaled, -1).values
     maxes = rearrange(maxes, "... -> ... 1")
 
     # shift by the max for the relevant dimension
-    shifted = x - maxes
+    shifted = scaled - maxes
 
     # raise all items to the exponential
     exponentials = torch.exp(shifted)
