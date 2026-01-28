@@ -46,6 +46,7 @@ transformer = Transformer(vocab_size=VOCAB_SIZE,
                           d_ff=D_FF,
                           theta=ROPE_THETA,
                           device=DEVICE)
+transformer.compile()
 
 # initialize optimizer
 optimizer = training.AdamW(params=transformer.parameters(),
