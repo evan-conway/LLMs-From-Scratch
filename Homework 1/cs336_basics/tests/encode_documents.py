@@ -8,7 +8,7 @@ from itertools import accumulate
 from operator import add
 from itertools import chain
 
-serialization_path = "data/pickled_data/TinyStoriesV2-GPT4-train.txt.pkl"
+serialization_path = "data/pickled_data/TinyStories_tokenizer.pkl"
 encoding_path = "data/TinyStoriesV2-GPT4-train.txt"
 output_path = "data/serialized_data/TinyStoriesV2-GPT4-train.dat"
 
