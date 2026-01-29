@@ -5,3 +5,5 @@ Homework 1/data/TinyStoriesV2-GPT4-train.txt
 Homework 1/data/TinyStoriesV2-GPT4-valid.txt
 .vscode/settings.json
 Homework 1/.python-version
+Homework 1/data/owt_train.txt
+Homework 1/data/owt_valid.txt
